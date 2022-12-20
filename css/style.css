@@ -797,6 +797,13 @@ header nav ul li a:hover {
   margin: 50px 80px;
 }
 
+.contact-form form {
+  background-color: rgba(240, 223, 255, 0.4);
+  padding: 30px 50px;
+  border-radius: 10px;
+
+}
+
 /*!----------FOOTER----------*/
 footer {
   background-color: #5a31b7;

@@ -12,7 +12,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Iconos -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
@@ -47,63 +50,42 @@
 
       <section class="contact-form">
         <form action="" method="" enctype="">
-          <div class="form-left">
+          <div class="form-data">
+            <h3>Mantente en contacto con nosotros</h3>
             <div>
               <label for="nombre">Nombres:</label>
-              <input type="text" id="nombre" />
+              <input type="text" id="nombre" placeholder="¿Cuál es tu nombre?" required />
             </div>
-            <br />
-            <!-- <div>
-              <label for="apellido">Apellido:</label>
-              <input type="text" id="apellido" />
-            </div>
-            <br /> -->
+
             <div>
               <label for="correo">E-mail:</label>
-              <input type="email" name="" id="correo" />
+              <input type="email" id="correo" placeholder="¿Cuál es tu correo electrónico?" required/>
             </div>
-            <br />
+
             <div>
               <label for="celular">Celular:</label>
-              <input type="text" id="celular" />
+              <input type="number" id="celular" placeholder="¿Cuál es tu número de celular?"/>
             </div>
-            <br />
-            <!-- <div>
-              <label for="pass">Contraseña:</label>
-              <input type="password" />
+
+            <div class="comments">
+              <p>Detalles</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
-            <br /> -->
+            
           </div>
 
           <div>
-            <h3>Género:</h3>
-            <div>
-              <label for="masculine">Masculino</label>
-              <input type="radio" name="gender" id="" />
-              <label for="femmenine">Femenino</label>
-              <input type="radio" name="gender" id="" />
-              <label for="other">Otros</label>
-              <input type="radio" name="gender" id="" />
-            </div>
+            <label for="container"
+              >Estoy de acuerdo con los términos y condiciones.
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
           </div>
-          <br />
+
           <div>
-            <select name="country" id="">
-              <option value="">Elige país ---</option>
-              <option value="">Perú</option>
-              <option value="">México</option>
-              <option value="">Argentina</option>
-            </select>
+            <button type="submit" name="suscribir">Enviar</button>
           </div>
-          <div>
-            <h3>Déjanos un comentario:</h3>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <br />
-          <div>
-            <input type="submit" />
-            <input type="reset" />
-          </div>
+
         </form>
       </section>
     </main>
