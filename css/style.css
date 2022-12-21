@@ -90,19 +90,22 @@ header nav ul li a:hover {
 
 .hero a {
   font-weight: 400;
+  font-size: 1rem;
   text-decoration: none;
   letter-spacing: 1px;
   color: white;
   border: 1px solid #9f63ff;
   border-radius: 10px;
   padding: 15px;
+  transition: 300ms ease-in;
 }
 
 .hero a:hover {
   color: white;
   background-color: #9f63ff;
   cursor: pointer;
-  transition: 400ms ease;
+  
+  transform: scale(1.1);
 }
 
 /*-SERVICIOS-*/
@@ -155,28 +158,31 @@ header nav ul li a:hover {
   margin-bottom: 10px;
   font-size: 1.4rem;
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .servicios .servicios-tipos div p {
   margin-bottom: 40px;
-  font-weight: 200;
   font-size: 1.2rem;
+  font-weight: 200;
 }
 
 .servicios .servicios-tipos div a {
+  font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
   color: #9f63ff;
   border: 1px solid #9f63ff;
   border-radius: 10px;
   padding: 15px;
+  transition: 300ms ease-in;
 }
 
 .servicios .servicios-tipos div a:hover {
   color: white;
   background-color: #9f63ff;
   cursor: pointer;
-  transition: 400ms ease;
 }
 
 /*-PRODUCTOS-*/
@@ -224,32 +230,33 @@ header nav ul li a:hover {
 }
 
 .productos .productos-contenedor .productos-varios h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .productos .productos-contenedor .productos-varios p {
   font-weight: 200;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
 .productos .productos-contenedor .productos-varios a {
+  font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
   color: #9f63ff;
   border: 1px solid #9f63ff;
   border-radius: 10px;
   padding: 15px;
+  transition: 300ms ease-in;
 }
 
 .productos .productos-contenedor .productos-varios a:hover {
   color: white;
   background-color: #9f63ff;
   cursor: pointer;
-  transition: 400ms ease;
 }
 
 .productos .productos-contenedor .productos-varios .content-circle {
@@ -261,10 +268,16 @@ header nav ul li a:hover {
 .productos .productos-contenedor .productos-varios .content-circle .circle {
   width: 32px;
   height: 32px;
-  background-color: #cca1ff;
+  background-color: #DFC0FF;
   border-radius: 50%;
-  margin-left: 0px;
   margin-right: 20px;
+  cursor: pointer;
+  transition: 500ms ease;
+}
+
+.productos .productos-contenedor .productos-varios .content-circle .circle:hover {
+  background-color: #CCA1FF;
+  border-radius: 50%;
 }
 
 /*-HACER-PEDIDOS-*/
@@ -311,8 +324,8 @@ header nav ul li a:hover {
 
 .pedidos .pedidos-pasos div h4 {
   margin-bottom: 5px;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -320,7 +333,7 @@ header nav ul li a:hover {
 .pedidos .pedidos-pasos div p {
   margin-bottom: 20px;
   font-weight: 200;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /*-SUSCRIBIR-*/
@@ -363,10 +376,11 @@ header nav ul li a:hover {
 .suscribir .suscribir-formu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   align-items: flex-start;
+  text-align: left;
   background-color: rgba(240, 223, 255, 0.4);
-  padding: 20px 30px;
+  padding: 30px 30px;
   border-radius: 0px 10px 10px 0px;
   width: 530px;
   height: 500px;
@@ -379,19 +393,21 @@ header nav ul li a:hover {
   text-align: left;
 }
 
-.suscribir .suscribir-formu form {
+.suscribir .suscribir-formu form div label{
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items:flex-start;
 }
 
 .suscribir .suscribir-formu form div {
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 
 .suscribir .suscribir-formu form div input {
+  font-family: "Noto Sans", sans-serif;
   border: 1px solid #5a31b7;
   background-color: white;
   padding: 10px;
@@ -401,20 +417,23 @@ header nav ul li a:hover {
 }
 
 .suscribir .suscribir-formu form div button {
+  font-family: "Noto Sans", sans-serif;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: 300;
   color: #9f63ff;
   background-color: transparent;
   border: 1.5px solid #9f63ff;
   border-radius: 10px;
   padding: 15px;
+  margin-top: 10px;
+  transition: 300ms ease-in;
 }
 
 .suscribir .suscribir-formu form div button:hover{
   color: white;
   background-color: #9f63ff;
   cursor: pointer;
-  transition: 400ms ease;
 }
 
 /*?---------------------ACERCA DE-----------------------*/
@@ -717,15 +736,15 @@ header nav ul li a:hover {
 }
 
 .gallery .gallery-content h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .gallery .gallery-content p {
   font-weight: 200;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
@@ -739,20 +758,34 @@ header nav ul li a:hover {
 .gallery .gallery-content .gallery-products .colour-circle .colour {
   width: 32px;
   height: 32px;
-  background-color: #cca1ff;
+  background-color: #DFC0FF;
   border-radius: 50%;
-  margin-left: 0px;
   margin-right: 20px;
+  transition: 500ms ease;
 }
 
-.gallery .gallery-content a {
+.gallery .gallery-content .gallery-products .colour-circle .colour:hover {
+  background-color: #CCA1FF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.gallery .gallery-content .gallery-products a {
   font-weight: 200;
   text-decoration: none;
-  color: white;
-  background-color: #9f63ff;
+  color: #9f63ff;
+  border: 1px solid #9f63ff;
   border-radius: 10px;
   padding: 15px;
+  transition: 300ms ease-in;
 }
+
+.gallery .gallery-content .gallery-products a:hover {
+  color: white;
+  background-color: #9f63ff;
+  cursor: pointer;
+}
+
 /*?---------------------CONTACTO-----------------------*/
 /*INTRO*/
 .intro-contact {
@@ -793,15 +826,144 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: left;
-  margin: 50px 80px;
+  padding: 50px 80px;
+  width: 100%;
+  
 }
 
 .contact-form form {
-  background-color: rgba(240, 223, 255, 0.4);
+  font-weight: 200;
+  font-size: 1.2rem;
   padding: 30px 50px;
   border-radius: 10px;
+}
 
+.contact-form form .form-data {
+  margin-bottom: 0px;
+}
+
+.contact-form form .form-data h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+}
+
+.contact-form form .form-data .inputs  div input {
+  font-family: "Noto Sans", sans-serif;
+  border: 1px solid #5a31b7;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.contact-form form .form-data .inputs  div p {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.contact-form form .comments p {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.contact-form form .comments textarea {
+  font-family: "Noto Sans", sans-serif;
+  border: 1px solid #5a31b7;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-form form .check .container{
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 200;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.contact-form form .check .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.contact-form form .check .container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border: 1px solid #5a31b7;
+  border-radius: 4px;
+}
+
+.contact-form form .check .container:hover input ~ .checkmark {
+  background-color: #F0DFFF;
+}
+
+.contact-form form .check .container input:checked ~ .checkmark {
+  background-color: #5A31B7
+}
+
+.contact-form form .check .container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.contact-form form .check .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.contact-form form .check .container .checkmark::after {
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.contact-form form .btn button{
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 300;
+  color: #9f63ff;
+  background-color: transparent;
+  border: 1px solid #9f63ff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  transition: 300ms ease-in;
+}
+
+.contact-form form .btn button:hover {
+  color: white;
+  background-color: #9f63ff;
+  cursor: pointer;
 }
 
 /*!----------FOOTER----------*/
