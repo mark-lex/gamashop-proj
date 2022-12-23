@@ -104,7 +104,7 @@ header nav ul li a:hover {
   color: white;
   background-color: #9f63ff;
   cursor: pointer;
-  
+
   transform: scale(1.1);
 }
 
@@ -138,20 +138,18 @@ header nav ul li a:hover {
 }
 
 .servicios .servicios-tipos div {
-  background-color: rgba(240, 223, 255, 0.4);
-  border-radius: 10px;
   width: 600px;
   height: 620px;
   color: #131815;
-  padding: 45px;
-  margin: 20px;
+  padding: 0px 50px;
+  margin: 20px 10px;
 }
 
 .servicios .servicios-tipos div img {
   width: 500px;
   height: 300px;
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .servicios .servicios-tipos div h4 {
@@ -160,12 +158,14 @@ header nav ul li a:hover {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-left: 20px;
 }
 
 .servicios .servicios-tipos div p {
   margin-bottom: 40px;
   font-size: 1.2rem;
   font-weight: 200;
+  margin-left: 20px;
 }
 
 .servicios .servicios-tipos div a {
@@ -177,6 +177,7 @@ header nav ul li a:hover {
   border-radius: 10px;
   padding: 15px;
   transition: 300ms ease-in;
+  margin-left: 20px;
 }
 
 .servicios .servicios-tipos div a:hover {
@@ -268,15 +269,19 @@ header nav ul li a:hover {
 .productos .productos-contenedor .productos-varios .content-circle .circle {
   width: 32px;
   height: 32px;
-  background-color: #DFC0FF;
+  background-color: #dfc0ff;
   border-radius: 50%;
   margin-right: 20px;
   cursor: pointer;
   transition: 500ms ease;
 }
 
-.productos .productos-contenedor .productos-varios .content-circle .circle:hover {
-  background-color: #CCA1FF;
+.productos
+  .productos-contenedor
+  .productos-varios
+  .content-circle
+  .circle:hover {
+  background-color: #cca1ff;
   border-radius: 50%;
 }
 
@@ -376,7 +381,7 @@ header nav ul li a:hover {
 .suscribir .suscribir-formu {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: flex-start;
   text-align: left;
   background-color: rgba(240, 223, 255, 0.4);
@@ -393,13 +398,13 @@ header nav ul li a:hover {
   text-align: left;
 }
 
-.suscribir .suscribir-formu form div label{
+.suscribir .suscribir-formu form div label {
   font-weight: 200;
   font-size: 1rem;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .suscribir .suscribir-formu form div {
@@ -430,7 +435,7 @@ header nav ul li a:hover {
   transition: 300ms ease-in;
 }
 
-.suscribir .suscribir-formu form div button:hover{
+.suscribir .suscribir-formu form div button:hover {
   color: white;
   background-color: #9f63ff;
   cursor: pointer;
@@ -513,24 +518,27 @@ header nav ul li a:hover {
 }
 
 .generales .generales-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0px 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 40px;
+  justify-items: center;
+  padding: 30px;
 }
 
 .generales .generales-content .box {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
   background-color: rgba(240, 223, 255, 0.4);
   color: #131815;
   text-align: center;
   border-radius: 10px;
-  padding: 10px;
+  padding: 40px;
 }
 
 .generales .generales-content .box h4 {
@@ -543,8 +551,9 @@ header nav ul li a:hover {
 
 .generales .generales-content div img {
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
+  width: 3 50px;
+  height: 350px;
+  object-fit: cover;
 }
 
 /*?---------------------SERVICIOS-----------------------*/
@@ -758,14 +767,14 @@ header nav ul li a:hover {
 .gallery .gallery-content .gallery-products .colour-circle .colour {
   width: 32px;
   height: 32px;
-  background-color: #DFC0FF;
+  background-color: #dfc0ff;
   border-radius: 50%;
   margin-right: 20px;
   transition: 500ms ease;
 }
 
 .gallery .gallery-content .gallery-products .colour-circle .colour:hover {
-  background-color: #CCA1FF;
+  background-color: #cca1ff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -830,7 +839,6 @@ header nav ul li a:hover {
   align-items: left;
   padding: 50px 80px;
   width: 100%;
-  
 }
 
 .contact-form form {
@@ -853,7 +861,7 @@ header nav ul li a:hover {
   padding-bottom: 30px;
 }
 
-.contact-form form .form-data .inputs  div input {
+.contact-form form .form-data .inputs div input {
   font-family: "Noto Sans", sans-serif;
   border: 1px solid #5a31b7;
   background-color: white;
@@ -864,7 +872,7 @@ header nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-.contact-form form .form-data .inputs  div p {
+.contact-form form .form-data .inputs div p {
   font-size: 1rem;
   padding-bottom: 10px;
 }
@@ -882,7 +890,7 @@ header nav ul li a:hover {
   border-radius: 5px;
 }
 
-.contact-form form .check .container{
+.contact-form form .check .container {
   display: block;
   position: relative;
   padding-left: 30px;
@@ -917,11 +925,11 @@ header nav ul li a:hover {
 }
 
 .contact-form form .check .container:hover input ~ .checkmark {
-  background-color: #F0DFFF;
+  background-color: #f0dfff;
 }
 
 .contact-form form .check .container input:checked ~ .checkmark {
-  background-color: #5A31B7
+  background-color: #5a31b7;
 }
 
 .contact-form form .check .container .checkmark:after {
@@ -946,7 +954,7 @@ header nav ul li a:hover {
   transform: rotate(45deg);
 }
 
-.contact-form form .btn button{
+.contact-form form .btn button {
   font-family: "Noto Sans", sans-serif;
   text-decoration: none;
   font-size: 1em;
