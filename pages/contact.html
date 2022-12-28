@@ -17,12 +17,10 @@
       rel="stylesheet"
     />
     <!-- CSS Bootstrap -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
@@ -57,63 +55,61 @@
 
       <section class="contact-form">
         <form action="" method="" enctype="">
-          <fieldset>
-            <div class="form-data">
-              <h3>Datos de Contacto</h3>
-              <div class="inputs">
-                <div>
-                  <p>Nombre</p>
-                  <input
-                    type="text"
-                    id="nombre"
-                    placeholder="Tu nombre"
-                    required
-                  />
-                </div>
+          <div class="form-data">
+            <h3>Datos de Contacto</h3>
+            <div class="inputs">
+              <div>
+                <p>Nombre</p>
+                <input
+                  type="text"
+                  id="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
 
-                <div>
-                  <p>Correo electrónico</p>
-                  <input
-                    type="email"
-                    id="correo"
-                    placeholder="Tu email"
-                    required
-                  />
-                </div>
+              <div>
+                <p>Correo electrónico</p>
+                <input
+                  type="email"
+                  id="correo"
+                  placeholder="Tu email"
+                  required
+                />
+              </div>
 
-                <div>
-                  <p>Celular</p>
-                  <input
-                    type="number"
-                    id="celular"
-                    placeholder="Tu número de teléfono"
-                  />
-                </div>
+              <div>
+                <p>Celular</p>
+                <input
+                  type="number"
+                  id="celular"
+                  placeholder="Tu número de teléfono"
+                />
               </div>
             </div>
+          </div>
 
-            <div class="comments">
-              <p>Detalles</p>
-              <textarea
-                name=""
-                cols="51"
-                rows="5"
-                placeholder="Escribe tu mensaje aquí"
-              ></textarea>
-            </div>
+          <div class="comments">
+            <p>Detalles</p>
+            <textarea
+              name=""
+              cols="51"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí"
+            ></textarea>
+          </div>
 
-            <div class="check">
-              <label class="container"
-                >Estoy de acuerdo con los términos y condiciones.
-                <input type="checkbox" checked="checked" />
-                <span class="checkmark"></span>
-              </label>
-            </div>
+          <div class="check">
+            <label class="container"
+              >Estoy de acuerdo con los términos y condiciones.
+              <input type="checkbox"/>
+              <span class="checkmark"></span>
+            </label>
+          </div>
 
-            <div class="btn">
-              <button type="submit" name="enviar">Enviar</button>
-            </div>
-          </fieldset>
+          <div class="btn">
+            <button type="submit" name="enviar">Enviar</button>
+          </div>
         </form>
       </section>
     </main>
