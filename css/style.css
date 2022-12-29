@@ -15,7 +15,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #9F63FF;
+  background-color: #9f63ff;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -26,7 +26,7 @@ header .navbar {
 }
 
 header .navbar-collapse {
-  flex-grow: initial ;
+  flex-grow: initial;
 }
 
 header nav a img {
@@ -636,8 +636,9 @@ header nav a img {
   align-items: center;
 }
 
-.tabs-content .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-color: #9F63FF;
+.tabs-content .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #9f63ff;
 }
 
 /*?---------------------PRODUCTOS-----------------------*/
@@ -1706,10 +1707,10 @@ footer .box .redes .list ul li a i {
   }
 
   .servicios h3 {
-    padding: 10px 20px
+    padding: 10px 20px;
   }
 
-  .servicios h2{
+  .servicios h2 {
     padding: 0px 20px;
     margin-bottom: 0;
   }
@@ -1782,7 +1783,7 @@ footer .box .redes .list ul li a i {
   .pedidos .pedidos-pasos div {
     width: 250px;
     height: 250px;
-    margin: 30px
+    margin: 30px;
   }
 
   .pedidos .pedidos-pasos div img {
@@ -1813,7 +1814,7 @@ footer .box .redes .list ul li a i {
     margin-top: 30px;
   }
 
-  /*?about*/ 
+  /*?about*/
   .intro {
     flex-direction: column;
   }
@@ -1832,7 +1833,7 @@ footer .box .redes .list ul li a i {
   .intro img {
     width: 100%;
     height: 100%;
-    border-radius: 0
+    border-radius: 0;
   }
 
   .about {
@@ -1892,7 +1893,7 @@ footer .box .redes .list ul li a i {
   .intro-service img {
     width: 100%;
     height: 100%;
-    border-radius: 0
+    border-radius: 0;
   }
 
   .service-various {
@@ -1950,7 +1951,7 @@ footer .box .redes .list ul li a i {
   .intro-products img {
     width: 100%;
     height: 100%;
-    border-radius: 0
+    border-radius: 0;
   }
 
   .gallery {
@@ -2002,7 +2003,7 @@ footer .box .redes .list ul li a i {
   .intro-contact img {
     width: 100%;
     height: 100%;
-    border-radius: 0
+    border-radius: 0;
   }
 
   .contact-form {
