@@ -1,0 +1,88 @@
+/*-----CONTACTO-----*/
+
+/*-INTRO-CONTACT-*/
+.intro-contact {
+    background-color: rgba(240, 223, 255, 0.4);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+    div {
+        width: 500px;
+        text-align: left;
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 2rem;
+            font-weight: 200;
+            letter-spacing: 0.5px;
+            margin-bottom: 40px;
+        }
+    }
+    img {
+        border-radius: 0px 0px 10px 10px;
+        width: 750px;
+        height: 500px;
+    }
+}
+
+.contact-form {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 50px 80px;
+        width: 100%;
+        .mb-3 {
+            font-weight: 200;
+            font-size: 1.2rem;
+            label {
+                margin-bottom: 10px;
+                color: #131815;
+                font-size: 1rem;
+            }
+            input {
+                font-family: "Noto Sans", sans-serif;
+                border: 1px solid #5a31b7;
+                font-size: 1rem;
+                font-weight: 300;
+                padding: 10px 10px;
+            }
+            .from-control {
+                font-family: "Noto Sans", sans-serif;
+                border: 1px solid #5a31b7;
+                font-size: 1rem;
+                font-weight: 300;
+                padding: 10px 10px;
+            }
+        }
+        .form-check {
+            .from-check-input {
+                background-color: #5a31b7;
+                border-color: #5a31b7;
+            }
+            .from-check-label {
+                padding-left: 10px;
+            }
+        }
+        .btn-primary {
+            border: 1px solid #7b48db;
+            background-color: #7b48db;
+            --bs-btn-bg: #7b48db;
+            --bs-btn-border-color: #7b48db;
+            --bs-btn-hover-bg: #5a31b7;
+            --bs-btn-hover-border-color: #5a31b7;
+            --bs-btn-active-bg: #5a31b7;
+            --bs-btn-active-border-color: #5a31b7;
+            --bs-btn-disabled-bg: #5a31b7;
+            --bs-btn-disabled-border-color: #5a31b7;
+        }
+    }
+}

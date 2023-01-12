@@ -94,7 +94,6 @@ header nav a img {
   color: white;
   background-color: #7b48db;
   cursor: pointer;
-
   transform: scale(1.1);
 }
 
@@ -241,12 +240,12 @@ header nav a img {
   border-radius: 10px;
   padding: 15px;
   transition: 300ms ease-in;
+  cursor: pointer;
 }
 
 .productos .productos-contenedor .productos-varios a:hover {
   color: white;
   background-color: #9f63ff;
-  cursor: pointer;
 }
 
 .productos .productos-contenedor .productos-varios .content-circle {
@@ -265,11 +264,7 @@ header nav a img {
   transition: 500ms ease;
 }
 
-.productos
-  .productos-contenedor
-  .productos-varios
-  .content-circle
-  .circle:hover {
+.productos .productos-contenedor .productos-varios .content-circle .circle:hover {
   background-color: #cca1ff;
   border-radius: 50%;
 }
@@ -421,12 +416,12 @@ header nav a img {
   padding: 15px;
   margin-top: 10px;
   transition: 300ms ease-in;
+  cursor: pointer;
 }
 
 .suscribir .suscribir-formu form div button:hover {
   color: white;
   background-color: #9f63ff;
-  cursor: pointer;
 }
 
 /*?---------------------ACERCA DE-----------------------*/
@@ -636,10 +631,10 @@ header nav a img {
   align-items: center;
 }
 
-.tabs-content .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+/* .tabs-content .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: #9f63ff;
-}
+  color: var(--bs-nav-pills-link-active-color);
+} */
 
 /*?---------------------PRODUCTOS-----------------------*/
 /*INTRO*/
@@ -749,12 +744,12 @@ header nav a img {
   border-radius: 50%;
   margin-right: 20px;
   transition: 500ms ease;
+  cursor: pointer;
 }
 
 .gallery .gallery-content .gallery-products .colour-circle .colour:hover {
   background-color: #cca1ff;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .gallery .gallery-content .gallery-products a {
@@ -765,12 +760,12 @@ header nav a img {
   border-radius: 10px;
   padding: 15px;
   transition: 300ms ease-in;
+    cursor: pointer;
 }
 
 .gallery .gallery-content .gallery-products a:hover {
   color: white;
   background-color: #9f63ff;
-  cursor: pointer;
 }
 
 /*?---------------------CONTACTO-----------------------*/

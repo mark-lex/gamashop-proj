@@ -1,0 +1,73 @@
+/*-----FOOTER-----*/
+
+footer {
+    background-color: $dark-seven-colour;
+    padding: 50px 0px;
+    color: $text-colour-secondary;
+    font-family: "Noto Sans", sans-serif;
+    .box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        img {
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .redes {
+            h3 {
+                font-size: 1.2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: $text-colour-secondary;
+                letter-spacing: 3px;
+                padding: 20px 10px 10px 0px;
+            }
+            .list {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    align-items: flex-start;
+                    li {
+                        a {
+                            i {
+                                font-size: 2.5em;
+                                color: $text-colour-secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div {
+            h3 {
+                font-size: 1.2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: $text-colour-secondary;
+                letter-spacing: 3px;
+                padding: 20px 10px 10px 0px;
+            }
+            ul {
+                list-style: none;
+                li {
+                    font-size: 1rem;
+                    margin: 5px 10px 0px 0px;
+                    padding-bottom: 10px;
+                    a {
+                        font-weight: 200;
+                        text-decoration: none;
+                        color: $text-colour-secondary;
+                    }
+                }
+            }
+        }
+    }
+    p {
+        font-weight: 200;
+        text-align: center;
+        color: $bg-colour;
+        margin-top: 20px;
+    }
+}
