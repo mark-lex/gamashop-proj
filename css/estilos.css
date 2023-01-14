@@ -463,6 +463,8 @@ header {
       align-items: center; }
       .service-various .tabs-content .nav-pills .nav-item .nav-link {
         color: #131815; }
+      .service-various .tabs-content .nav-pills .nav-item .active {
+        color: white; }
     .service-various .tabs-content .tab-content .tab-pane h3 {
       font-size: 1.5rem;
       font-weight: 400;
@@ -523,31 +525,31 @@ header {
     flex-wrap: wrap;
     color: #131815;
     padding-bottom: 50px; }
-    .gallery .gallery-content .gallety-products {
+    .gallery .gallery-content .gallery-products {
       width: 400px;
       height: 520px;
       margin: 20px 20px;
       color: #131815; }
-      .gallery .gallery-content .gallety-products div img {
+      .gallery .gallery-content .gallery-products div img {
         width: 400px;
         height: 300px;
         margin-bottom: 10px;
         border-radius: 10px; }
-      .gallery .gallery-content .gallety-products div h4 {
+      .gallery .gallery-content .gallery-products div h4 {
         font-size: 1.4rem;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px; }
-      .gallery .gallery-content .gallety-products div p {
+      .gallery .gallery-content .gallery-products div p {
         font-weight: 200;
         font-size: 1.2rem;
         margin-bottom: 20px; }
-      .gallery .gallery-content .gallety-products .colour-circle {
+      .gallery .gallery-content .gallery-products .colour-circle {
         display: flex;
         justify-content: left;
         align-items: center;
         margin-bottom: 40px; }
-        .gallery .gallery-content .gallety-products .colour-circle .colour {
+        .gallery .gallery-content .gallery-products .colour-circle .colour {
           width: 32px;
           height: 32px;
           background-color: #dfc0ff;
@@ -555,10 +557,10 @@ header {
           margin-right: 20px;
           transition: 500ms ease;
           cursor: pointer; }
-          .gallery .gallery-content .gallety-products .colour-circle .colour:hover {
+          .gallery .gallery-content .gallery-products .colour-circle .colour:hover {
             background-color: #cca1ff;
             border-radius: 50%; }
-      .gallery .gallery-content .gallety-products a {
+      .gallery .gallery-content .gallery-products a {
         font-weight: 200;
         text-decoration: none;
         color: #9f63ff;
@@ -567,7 +569,7 @@ header {
         padding: 15px;
         transition: 300ms ease-in;
         cursor: pointer; }
-        .gallery .gallery-content .gallety-products a:hover {
+        .gallery .gallery-content .gallery-products a:hover {
           color: white;
           background-color: #9f63ff; }
 
@@ -757,8 +759,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10% 6% 10% 40%;
-    padding: 0; }
+    margin: 50px 80px;
+    padding: 0;
+    text-align: center; }
   .about p {
     padding: 0;
     margin: 0; }

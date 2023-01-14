@@ -629,16 +629,15 @@ header nav a img {
   color: #131815;
 }
 
+.tabs-content .active {
+  color: white;
+}
+
 .tabs-content .nav-pills {
   --bs-nav-pills-link-active-bg: #9f63ff;
   justify-content: space-evenly;
   align-items: center;
 }
-
-/* .tabs-content .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-color: #9f63ff;
-  color: var(--bs-nav-pills-link-active-color);
-} */
 
 /*?---------------------PRODUCTOS-----------------------*/
 /*INTRO*/
