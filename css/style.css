@@ -264,7 +264,11 @@ header nav a img {
   transition: 500ms ease;
 }
 
-.productos .productos-contenedor .productos-varios .content-circle .circle:hover {
+.productos
+  .productos-contenedor
+  .productos-varios
+  .content-circle
+  .circle:hover {
   background-color: #cca1ff;
   border-radius: 50%;
 }
@@ -760,7 +764,7 @@ header nav a img {
   border-radius: 10px;
   padding: 15px;
   transition: 300ms ease-in;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .gallery .gallery-content .gallery-products a:hover {

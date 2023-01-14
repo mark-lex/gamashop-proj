@@ -16,7 +16,8 @@ header {
   background-color: #9f63ff;
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  padding: 10px 20px 5px 20px; }
   header .navbar {
     width: 100%; }
     header .navbar .container-fluid .navbar-brand img {
@@ -1187,6 +1188,17 @@ footer {
     width: 400px;
     height: 100%;
     margin-top: 30px; }
+  .suscribir .suscribir-bloque .suscribir-formu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    background-color: rgba(240, 223, 255, 0.4);
+    padding: 30px 30px;
+    border-radius: 0px 0px 10px 10px;
+    width: 400px;
+    height: 100%; }
   /*about*/
   .intro {
     flex-direction: column; }
