@@ -8,7 +8,7 @@
     align-items: center;
     width: 100%;
     height: 80vh;
-    color: $text-colour-secondary;
+    color: nth($text-colour , 3 );
     text-align: center;
     background: linear-gradient(
         0deg,
@@ -21,30 +21,30 @@
     background-position: center;
     background-attachment: fixed;
     h1 {
-        font-size: 3.5rem;
+        font-size: nth($font-size , 2 );
         font-weight: 700;
         display: inline-block;
         padding: 10px;
     }
     p{
         margin-bottom: 40px;
-        font-size: 2rem;
+        font-size: nth($font-size , 5 );
         font-weight: 200;
         letter-spacing: 0.5px;
     }
     a{
         font-weight: 400;
-        font-size: 1rem;
+        font-size: nth($font-size , 9 );
         text-decoration: none;
         letter-spacing: 1px;
-        color: $text-colour-secondary;
-        background-color: $primary-colour;
+        color: nth($text-colour , 3 );
+        background-color: nth($colour-palette, 5 );
         border-radius: 10px;
         padding: 15px;
         transition: 300ms ease-in;
         &:hover {
-            color: $text-colour-secondary;
-            background-color: $primary-colour;
+            color: nth($text-colour , 3 );
+            background-color: nth($colour-palette, 4 );
             cursor: pointer;
             transform: scale(1.1);
         }
@@ -55,16 +55,16 @@
 .servicios {
     text-align: center;
     margin-top: 100px;
-    color: $text-colour-primary;
+    color: nth($text-colour , 1 );
     h3 {
-        font-size: 1.5rem;
+        font-size: nth($font-size , 6 );
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 5px;
         padding: 20px 10px 10px 10px;
     }
     h2 {
-        font-size: 2rem;
+        font-size: nth($font-size , 5 );
         font-weight: 200;
         letter-spacing: 0.5px;
         padding: 0px 10px 10px 10px;
@@ -87,7 +87,7 @@
             }
             h4 {
                 margin-bottom: 10px;
-                font-size: 1.4rem;
+                font-size: nth($font-size , 7 );
                 font-weight: 400;
                 text-transform: uppercase;
                 letter-spacing: 2px;
@@ -96,23 +96,23 @@
             p {
                 padding-left: 20px;
                 padding-bottom: 40px;
-                font-size: 1.2rem;
+                font-size: nth($font-size , 8 );
                 font-weight: 200;
             }
             a {
-                font-size: 1rem;
+                font-size: nth($font-size , 9 );
                 font-weight: 300;
                 text-decoration: none;
-                color: $primary-colour;
-                border: 1px solid $primary-colour;
+                color: nth($colour-palette , 5 );
+                border: 1px solid nth($colour-palette , 5 );
                 border-radius: 10px;
                 padding: 15px;
                 transition: 300ms ease-in;
                 margin-left: 20px;
                 cursor: pointer;
                 &:hover {
-                    color: $text-colour-secondary;
-                    background-color: $primary-colour;
+                    color: nth($text-colour , 3 );
+                    background-color: nth($colour-palette , 5 );
                 }
             }
         }
@@ -123,9 +123,9 @@
 
 .productos {
     margin-top: 70px;
-    color: $text-colour-primary;
+    color: nth($text-colour , 1 );
     h3 {
-        font-size: 1.5rem;
+        font-size: nth($font-size , 6 );
         font-weight: 400;
         text-align: center;
         text-transform: uppercase;
@@ -133,7 +133,7 @@
         padding: 20px 10px 10px 10px;
     }
     h2 {
-        font-size: 2rem;
+        font-size: nth($font-size , 5 );
         font-weight: 200;
         text-align: center;
         letter-spacing: 0.5px;
@@ -157,14 +157,14 @@
                     border-radius: 10px;
                 }
                 h4 {
-                    font-size: 1.4rem;
+                    font-size: nth($font-size , 7 );
                     font-weight: 400;
                     text-transform: uppercase;
                     letter-spacing: 2px;
                 }
                 p {
                     font-weight: 200;
-                    font-size: 1.2rem;
+                    font-size: nth($font-size , 8 );
                     margin-bottom: 20px;
                 }
             }
@@ -175,30 +175,30 @@
                 .circle {
                     width: 32px;
                     height: 32px;
-                    background-color: $dark-two-colour;
+                    background-color: nth($colour-palette , 8 );
                     border-radius: 50%;
                     margin-right: 20px;
                     cursor: pointer;
                     transition: 500ms ease;
                     &:hover {
-                        background-color: $dark-three-colour;
+                        background-color: nth($colour-palette , 7 );
                         border-radius: 50%;
                     }
                 }
             }
             a {
-                font-size: 1rem;
+                font-size: nth($font-size , 9 );
                 font-weight: 300;
                 text-decoration: none;
-                color: $primary-colour;
-                border: 1px solid $primary-colour;
+                color: nth($colour-palette , 5 );
+                border: 1px solid nth($colour-palette , 5 );
                 border-radius: 10px;
                 padding: 15px;
                 transition: 300ms ease-in;
                 cursor: pointer;
                 &:hover {
-                    color: $text-colour-secondary;
-                    background-color: $primary-colour;
+                    color: nth($text-colour , 3 );
+                    background-color: nth($colour-palette , 5 );
                 }
             }
         }
@@ -209,16 +209,16 @@
 .pedidos {
     text-align: center;
     margin-top: 100px;
-    color: $text-colour-primary;
+    color: nth($text-colour , 1 );
     h3 {
-        font-size: 1.5rem;
+        font-size: nth($font-size , 6 );
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 5px;
         padding: 20px 10px 10px 10px;
     }
     h2{
-        font-size: 2rem;
+        font-size: nth($font-size , 5 );
         font-weight: 200;
         letter-spacing: 0.5px;
         padding: 0px 10px 10px 10px;
@@ -239,7 +239,7 @@
             }
             h4 {
                 margin-bottom: 5px;
-                font-size: 1.4rem;
+                font-size: nth($font-size , 7 );
                 font-weight: 400;
                 text-transform: uppercase;
                 letter-spacing: 2px;
@@ -247,7 +247,7 @@
             p {
                 margin-bottom: 20px;
                 font-weight: 200;
-                font-size: 1.2rem;
+                font-size: nth($font-size , 8 );
             }
         }
     }
@@ -258,16 +258,16 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
-    color: $text-colour-primary;
+    color: nth($text-colour , 1 );
     h3{
-        font-size: 1.5rem;
+        font-size: nth($font-size , 6 );
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 5px;
         padding: 20px 10px 10px 10px;
     }
     h2 {
-        font-size: 2rem;
+        font-size: nth($font-size , 5 );
         font-weight: 200;
         letter-spacing: 0.5px;
         padding: 0px 10px 10px 10px;
@@ -298,7 +298,7 @@
             p {
                 margin-bottom: 20px;
                 font-weight: 200;
-                font-size: 1.4rem;
+                font-size: nth($font-size , 7 );
                 text-align: left;
             }
             form {
@@ -307,37 +307,35 @@
                     margin: 20px 0px;
                     label {
                         font-weight: 200;
-                        font-size: 1rem;
+                        font-size: nth($font-size , 9 );
                         margin-bottom: 10px;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                     }
                     input {
-                        font-family: "Noto Sans", sans-serif;
-                        border: 1px solid $dark-seven-colour;
-                        background-color: $text-colour-secondary;
+                        border: 1px solid nth($colour-palette, 3 );
+                        background-color: nth($text-colour , 3 );
                         padding: 10px;
                         border-radius: 5px;
                         width: 300px;
                         height: 40px;
                     }
                     button {
-                        font-family: "Noto Sans", sans-serif;
                         text-decoration: none;
-                        font-size: 1em;
+                        font-size: nth($font-size , 9 );
                         font-weight: 300;
-                        color: $primary-colour;
+                        color: nth($colour-palette, 5 );
                         background-color: transparent;
-                        border: 1.5px solid $primary-colour;
+                        border: 1.5px solid nth($colour-palette, 5 );
                         border-radius: 10px;
                         padding: 15px;
                         margin-top: 10px;
                         transition: 300ms ease-in;
                         cursor: pointer;
                         &:hover {
-                            color: $text-colour-secondary;
-                            background-color: $primary-colour;
+                            color: nth($text-colour , 3 );
+                            background-color: nth($colour-palette, 5 );
                         }
                     }
                 }

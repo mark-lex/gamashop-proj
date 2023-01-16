@@ -68,7 +68,7 @@ header {
     transition: 300ms ease-in; }
     .hero a:hover {
       color: white;
-      background-color: #9f63ff;
+      background-color: #7b48db;
       cursor: pointer;
       transform: scale(1.1); }
 
@@ -294,7 +294,6 @@ header {
           flex-direction: column;
           align-items: flex-start; }
         .suscribir .suscribir-bloque .suscribir-formu form div input {
-          font-family: "Noto Sans", sans-serif;
           border: 1px solid #5a31b7;
           background-color: white;
           padding: 10px;
@@ -302,9 +301,8 @@ header {
           width: 300px;
           height: 40px; }
         .suscribir .suscribir-bloque .suscribir-formu form div button {
-          font-family: "Noto Sans", sans-serif;
           text-decoration: none;
-          font-size: 1em;
+          font-size: 1rem;
           font-weight: 300;
           color: #9f63ff;
           background-color: transparent;

@@ -1,4 +1,13 @@
-//COLOUR
+//!VARIABLES
+//BACKGROUND
+$bg-colour: rgba(240, 223, 255, 0.4);
+
+//TEXT-COLOUR
+$text-colour-primary: #131815;
+$text-colour-secondary: white;
+$text-colour-neutral: #e7e8e8;
+
+//COLOURS
 $primary-colour: #9f63ff;
 $dark-nine-colour: #2a137a;
 $dark-eight-colour: #3e1f93;
@@ -10,15 +19,36 @@ $dark-three-colour: #cca1ff;
 $dark-two-colour: #dfc0ff;
 $dark-one-colour: #f0dfff;
 
-//TEXT-COLOUR
-$text-colour-primary: #131815;
-$text-colour-secondary: white;
-$text-colour-neutral: #e7e8e8;
+//!LISTAS
+$colour-palette:
+#2a137a,
+#3e1f93,
+#5a31b7,
+#7b48db,
 
-//BACKGROUND
-$bg-colour: rgba(240, 223, 255, 0.4);
+#9f63ff,
 
-//LISTAS
-$colours:
+#bb8aff,
+#cca1ff,
+#dfc0ff,
+#f0dfff;
 
-//MAPA
+$text-colour:
+#131815,
+#e7e8e8,
+white;
+
+$font-size:
+4rem,
+3.5rem,
+3rem,
+2.5rem,
+2rem,
+1.5rem,
+1.4rem,
+1.2rem,
+1rem,
+0.9rem,
+0.8rem;
+
+//!MAPAS
