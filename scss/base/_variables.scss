@@ -14,7 +14,10 @@ $colour-palette:
 #dfc0ff, 
 #f0dfff;
 
-$text-colour: #131815, #e7e8e8, white;
+$text-colour: 
+#131815, 
+#e7e8e8, 
+white;
 
 $font-size: 
 4rem, 
@@ -87,4 +90,13 @@ $input: (
     border-radius: 0px 0px 10px 10px;
     width: 750px;
     height: 500px;
+}
+
+//!MIXINS
+
+@mixin text ($size, $weight, $spacing, $padd) {
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $spacing;
+    padding: $padd;
 }

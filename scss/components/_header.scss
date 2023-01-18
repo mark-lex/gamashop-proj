@@ -21,10 +21,16 @@ header {
             .navbar-collapse {
                 flex-grow: initial;
                 .navbar-nav {
-                    .navi-item {
+                    .nav-item {
                         .nav-link {
-                            color: nth($text-colour , 3 ) ;
-                            font-size: 1.1rem;
+                            color: nth($text-colour , 2 );
+                            font-size: nth($font-size , 9 );
+                            transition: 300ms ease-in;
+                            &:hover {
+                                color: nth($text-colour , 3 );
+                                text-decoration: underline;
+                                text-underline-position: under;
+                            }
                         }
                     }
                 }

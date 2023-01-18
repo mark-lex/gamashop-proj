@@ -55,9 +55,14 @@ header {
       object-fit: contain; }
     header .navbar .container-fluid .navbar-collapse {
       flex-grow: initial; }
-      header .navbar .container-fluid .navbar-collapse .navbar-nav .navi-item .nav-link {
-        color: white;
-        font-size: 1.1rem; }
+      header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: #e7e8e8;
+        font-size: 1rem;
+        transition: 300ms ease-in; }
+        header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+          color: white;
+          text-decoration: underline;
+          text-underline-position: under; }
 
 /*-----INDEX-----*/
 /*-HERO-IMAGE-*/
@@ -365,16 +370,16 @@ header {
   .generales h3 {
     font-size: 1.5rem;
     font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
     letter-spacing: 5px;
-    padding: 20px 10px 10px 10px; }
+    padding: 20px 10px 10px 10px;
+    text-transform: uppercase;
+    text-align: center; }
   .generales h2 {
     font-size: 2rem;
     font-weight: 200;
-    text-align: center;
     letter-spacing: 0.5px;
     padding: 0px 10px 10px 10px;
+    text-align: center;
     margin-bottom: 30px; }
   .generales .generales-content {
     max-width: 1200px;
@@ -396,10 +401,10 @@ header {
       border-radius: 10px;
       padding: 40px; }
       .generales .generales-content .box h4 {
-        margin-bottom: 10px;
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 2px;
+        padding: 0px 0px 10px 0px;
         text-transform: uppercase; }
     .generales .generales-content div img {
       border-radius: 10px;
@@ -417,9 +422,9 @@ header {
   .service-various h3 {
     font-size: 1.5rem;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 5px;
-    padding: 20px 10px 10px 10px; }
+    padding: 20px 10px 10px 10px;
+    text-transform: uppercase; }
   .service-various h2 {
     font-size: 2rem;
     font-weight: 200;
@@ -446,8 +451,8 @@ header {
     .service-various .tabs-content .tab-content .tab-pane h3 {
       font-size: 1.5rem;
       font-weight: 400;
-      text-transform: uppercase;
-      padding-bottom: 20px;
+      letter-spacing: 5px;
+      padding: 20px 0px 20px 10px;
       text-align: left; }
     .service-various .tabs-content .tab-content .tab-pane p {
       text-align: left;
@@ -461,16 +466,16 @@ header {
   .gallery h3 {
     font-size: 1.5rem;
     font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
     letter-spacing: 5px;
-    padding: 20px 10px 10px 10px; }
+    padding: 20px 10px 10px 10px;
+    text-transform: uppercase;
+    text-align: center; }
   .gallery h2 {
     font-size: 2rem;
     font-weight: 200;
-    text-align: center;
     letter-spacing: 0.5px;
     padding: 0px 10px 10px 10px;
+    text-align: center;
     margin-bottom: 30px; }
   .gallery .gallery-content {
     display: flex;
@@ -492,8 +497,9 @@ header {
       .gallery .gallery-content .gallery-products div h4 {
         font-size: 1.4rem;
         font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        padding: 10px 0px 0px 0px;
+        text-transform: uppercase; }
       .gallery .gallery-content .gallery-products div p {
         font-weight: 200;
         font-size: 1.2rem;
@@ -512,10 +518,11 @@ header {
           transition: 500ms ease;
           cursor: pointer; }
           .gallery .gallery-content .gallery-products .colour-circle .colour:hover {
-            background-color: #cca1ff;
+            background-color: #bb8aff;
             border-radius: 50%; }
       .gallery .gallery-content .gallery-products a {
-        font-weight: 200;
+        font-size: 1rem;
+        font-weight: 300;
         text-decoration: none;
         color: #9f63ff;
         border: 1px solid #9f63ff;
@@ -596,35 +603,36 @@ footer {
     footer .box .redes h3 {
       font-size: 1.2rem;
       font-weight: 400;
-      text-transform: uppercase;
-      color: white;
       letter-spacing: 3px;
-      padding: 20px 10px 10px 0px; }
+      padding: 20px 0px 10px 0px;
+      text-transform: uppercase; }
     footer .box .redes .list ul {
       display: flex;
       flex-direction: row;
       justify-content: left;
       align-items: flex-start; }
       footer .box .redes .list ul li a i {
-        font-size: 2.5em;
+        font-size: 2.5rem;
         color: white; }
     footer .box div h3 {
       font-size: 1.2rem;
       font-weight: 400;
-      text-transform: uppercase;
-      color: white;
       letter-spacing: 3px;
-      padding: 20px 10px 10px 0px; }
+      padding: 20px 0px 10px 0px;
+      text-transform: uppercase; }
     footer .box div ul {
       list-style: none; }
       footer .box div ul li {
         font-size: 1rem;
-        margin: 5px 10px 0px 0px;
-        padding-bottom: 10px; }
+        margin: 10px 0px 0px 0px;
+        padding-bottom: 5px; }
         footer .box div ul li a {
           font-weight: 200;
           text-decoration: none;
-          color: white; }
+          color: white;
+          transition: 300ms ease-in; }
+          footer .box div ul li a:hover {
+            color: #dfc0ff; }
   footer p {
     font-weight: 200;
     text-align: center;

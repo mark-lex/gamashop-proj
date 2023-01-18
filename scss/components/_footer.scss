@@ -15,12 +15,8 @@ footer {
         }
         .redes {
             h3 {
-                font-size: 1.2rem;
-                font-weight: 400;
+                @include text (nth($font-size , 8 ), 400, 3px, 20px 0px 10px 0px);
                 text-transform: uppercase;
-                color: nth($text-colour , 3 );
-                letter-spacing: 3px;
-                padding: 20px 10px 10px 0px;
             }
             .list {
                 ul {
@@ -31,7 +27,7 @@ footer {
                     li {
                         a {
                             i {
-                                font-size: 2.5em;
+                                font-size: nth($font-size , 4 );
                                 color: nth($text-colour , 3 );
                             }
                         }
@@ -41,23 +37,23 @@ footer {
         }
         div {
             h3 {
-                font-size: 1.2rem;
-                font-weight: 400;
+                @include text (nth($font-size , 8 ), 400, 3px, 20px 0px 10px 0px);
                 text-transform: uppercase;
-                color: nth($text-colour , 3 );
-                letter-spacing: 3px;
-                padding: 20px 10px 10px 0px;
             }
             ul {
                 list-style: none;
                 li {
-                    font-size: 1rem;
-                    margin: 5px 10px 0px 0px;
-                    padding-bottom: 10px;
+                    font-size: nth($font-size , 9 );
+                    margin: 10px 0px 0px 0px;
+                    padding-bottom: 5px;
                     a {
                         font-weight: 200;
                         text-decoration: none;
-                        color: nth($text-colour , 3 );
+                        color: nth($text-colour , 3 ) ;
+                        transition: 300ms ease-in;
+                        &:hover {
+                            color: nth($colour-palette , 8 );
+                        }
                     }
                 }
             }

@@ -23,22 +23,16 @@
     margin-top: 100px;
     color: nth($text-colour , 1 );
     h3 {
-        font-size: 1.5rem;
-        font-weight: 400;
+        @include text (nth($font-size , 6 ), 400, 5px, 20px 10px 10px 10px);
         text-transform: uppercase;
-        letter-spacing: 5px;
-        padding: 20px 10px 10px 10px;
     }
     h2 {
-        font-size: 2rem;
-        font-weight: 200;
-        letter-spacing: 0.5px;
-        padding: 0px 10px 10px 10px;
+        @include text (nth($font-size , 5 ), 200, 0.5px, 0px 10px 10px 10px);
         margin-bottom: 30px;
     }
     .tabs-content {
         background-color: rgba(240, 223, 255, 0.4);
-        color: #131815;
+        color: nth($text-colour , 1 );
         width: 70%;
         height: 100%;
         margin: 50px auto;
@@ -51,20 +45,17 @@
             align-items: center;
             .nav-item {
                 .nav-link {
-                    color: #131815;
+                    color: nth($text-colour , 1 );
                     }
                 .active {
-                    color: white;
+                    color: nth($text-colour , 3 );
                 }
             }
         }
         .tab-content {
             .tab-pane {
                 h3 {
-                    font-size: 1.5rem;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    padding-bottom: 20px;
+                    @include text (nth($font-size , 6 ), 400, 5px, 20px 0px 20px 10px);
                     text-align: left;
                 }
                 p {
