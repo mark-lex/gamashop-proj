@@ -1,10 +1,9 @@
 /*-----FOOTER-----*/
 
 footer {
-    background-color: $dark-seven-colour;
+    background-color: nth($colour-palette , 3 );
     padding: 50px 0px;
-    color: $text-colour-secondary;
-    font-family: "Noto Sans", sans-serif;
+    color: nth($text-colour , 3 );
     .box {
         display: flex;
         align-items: flex-start;
@@ -19,7 +18,7 @@ footer {
                 font-size: 1.2rem;
                 font-weight: 400;
                 text-transform: uppercase;
-                color: $text-colour-secondary;
+                color: nth($text-colour , 3 );
                 letter-spacing: 3px;
                 padding: 20px 10px 10px 0px;
             }
@@ -33,7 +32,7 @@ footer {
                         a {
                             i {
                                 font-size: 2.5em;
-                                color: $text-colour-secondary;
+                                color: nth($text-colour , 3 );
                             }
                         }
                     }
@@ -45,7 +44,7 @@ footer {
                 font-size: 1.2rem;
                 font-weight: 400;
                 text-transform: uppercase;
-                color: $text-colour-secondary;
+                color: nth($text-colour , 3 );
                 letter-spacing: 3px;
                 padding: 20px 10px 10px 0px;
             }
@@ -58,7 +57,7 @@ footer {
                     a {
                         font-weight: 200;
                         text-decoration: none;
-                        color: $text-colour-secondary;
+                        color: nth($text-colour , 3 );
                     }
                 }
             }
@@ -67,7 +66,7 @@ footer {
     p {
         font-weight: 200;
         text-align: center;
-        color: $bg-colour;
+        color: nth($colour-palette , 6 );
         margin-top: 20px;
     }
 }

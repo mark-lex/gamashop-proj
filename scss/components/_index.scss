@@ -100,16 +100,16 @@
                 font-weight: 200;
             }
             a {
-                font-size: nth($font-size , 9 );
-                font-weight: 300;
-                text-decoration: none;
-                color: nth($colour-palette , 5 );
-                border: 1px solid nth($colour-palette , 5 );
-                border-radius: 10px;
-                padding: 15px;
-                transition: 300ms ease-in;
-                margin-left: 20px;
-                cursor: pointer;
+                font-size: map-get($button , fnt-size );
+                font-weight: map-get($button , fnt-weight );
+                text-decoration: map-get($button , deco );
+                color: map-get($button , fnt-colour );
+                border: map-get($button , bord );
+                border-radius: map-get($button , b-radius );
+                padding: map-get($button , padd );
+                transition: map-get($button , trans );
+                margin-left: map-get($button , m-left );
+                cursor: map-get($button , cur );
                 &:hover {
                     color: nth($text-colour , 3 );
                     background-color: nth($colour-palette , 5 );
@@ -187,15 +187,15 @@
                 }
             }
             a {
-                font-size: nth($font-size , 9 );
-                font-weight: 300;
-                text-decoration: none;
-                color: nth($colour-palette , 5 );
-                border: 1px solid nth($colour-palette , 5 );
-                border-radius: 10px;
-                padding: 15px;
-                transition: 300ms ease-in;
-                cursor: pointer;
+                font-size: map-get($button , fnt-size );
+                font-weight: map-get($button , fnt-weight );
+                text-decoration: map-get($button , deco );
+                color: map-get($button , fnt-colour );
+                border: map-get($button , bord );
+                border-radius: map-get($button , b-radius );
+                padding: map-get($button , padd );
+                transition: map-get($button , trans );
+                cursor: map-get($button , cur );
                 &:hover {
                     color: nth($text-colour , 3 );
                     background-color: nth($colour-palette , 5 );
@@ -314,25 +314,26 @@
                         align-items: flex-start;
                     }
                     input {
-                        border: 1px solid nth($colour-palette, 3 );
-                        background-color: nth($text-colour , 3 );
-                        padding: 10px;
-                        border-radius: 5px;
-                        width: 300px;
-                        height: 40px;
+                        font-size: map-get($input , fnt-size );
+                        font-weight: map-get($input , fnt-weight );
+                        border: map-get($input , bord );
+                        border-radius: map-get($input , b-radius );
+                        padding: map-get($input , padd );
+                        width: map-get($input , w );
+                        height: map-get($input , h );
                     }
                     button {
-                        text-decoration: none;
-                        font-size: nth($font-size , 9 );
-                        font-weight: 300;
-                        color: nth($colour-palette, 5 );
+                        font-size: map-get($button , fnt-size );
+                        font-weight: map-get($button , fnt-weight );
+                        text-decoration: map-get($button , deco );
+                        color: map-get($button , fnt-colour );
                         background-color: transparent;
-                        border: 1.5px solid nth($colour-palette, 5 );
-                        border-radius: 10px;
-                        padding: 15px;
+                        border: map-get($button , bord );
+                        border-radius: map-get($button , b-radius );
+                        padding: map-get($button , padd );
                         margin-top: 10px;
-                        transition: 300ms ease-in;
-                        cursor: pointer;
+                        transition: map-get($button , trans );
+                        cursor: map-get($button , cur );
                         &:hover {
                             color: nth($text-colour , 3 );
                             background-color: nth($colour-palette, 5 );

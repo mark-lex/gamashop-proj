@@ -2,53 +2,89 @@
 //BACKGROUND
 $bg-colour: rgba(240, 223, 255, 0.4);
 
-//TEXT-COLOUR
-$text-colour-primary: #131815;
-$text-colour-secondary: white;
-$text-colour-neutral: #e7e8e8;
-
-//COLOURS
-$primary-colour: #9f63ff;
-$dark-nine-colour: #2a137a;
-$dark-eight-colour: #3e1f93;
-$dark-seven-colour: #5a31b7;
-$dark-six-colour: #7b48db;
-
-$dark-four-colour: #bb8aff;
-$dark-three-colour: #cca1ff;
-$dark-two-colour: #dfc0ff;
-$dark-one-colour: #f0dfff;
-
 //!LISTAS
-$colour-palette:
-#2a137a,
-#3e1f93,
-#5a31b7,
-#7b48db,
-
-#9f63ff,
-
-#bb8aff,
+$colour-palette: 
+#2a137a, 
+#3e1f93, 
+#5a31b7, 
+#7b48db, 
+#9f63ff, 
+#bb8aff, 
 #cca1ff,
-#dfc0ff,
+#dfc0ff, 
 #f0dfff;
 
-$text-colour:
-#131815,
-#e7e8e8,
-white;
+$text-colour: #131815, #e7e8e8, white;
 
-$font-size:
-4rem,
-3.5rem,
-3rem,
-2.5rem,
-2rem,
-1.5rem,
-1.4rem,
-1.2rem,
+$font-size: 
+4rem, 
+3.5rem, 
+3rem, 
+2.5rem, 
+2rem, 
+1.5rem, 
+1.4rem, 
+1.2rem, 
 1rem,
-0.9rem,
+0.9rem, 
 0.8rem;
 
 //!MAPAS
+$button: (
+    fnt-size: 1rem,
+    fnt-weight: 300,
+    deco: none,
+    fnt-colour: #9f63ff,
+    bord: 1px solid #9f63ff,
+    b-radius: 10px,
+    padd: 15px,
+    trans: 300ms ease-in,
+    m-left: 20px,
+    cur: pointer,
+);
+
+$input: (
+    fnt-size: 1rem,
+    fnt-weight: 300,
+    bord: 1px solid #9f63ff,
+    b-radius: 5px,
+    padd: 10px,
+    w:360px,
+    h:48px,
+);
+
+//!EXTENDS
+
+%intro {
+    background-color: $bg-colour;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+    color: nth($text-colour , 1 );
+}
+
+%div {
+    width: 500px;
+    text-align: left;
+}
+
+%title {
+    font-size: nth($font-size , 2 );
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+%paragraph {
+    font-size: nth($font-size , 5 );
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+
+%img {
+    border-radius: 0px 0px 10px 10px;
+    width: 750px;
+    height: 500px;
+}
