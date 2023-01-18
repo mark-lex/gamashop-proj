@@ -36,7 +36,8 @@ body {
 .intro img, .intro-service img, .intro-products img, .intro-contact img {
   border-radius: 0px 0px 10px 10px;
   width: 750px;
-  height: 500px; }
+  height: 500px;
+  object-fit: cover; }
 
 /*-----HEADER-----*/
 header {
@@ -65,7 +66,7 @@ header {
           text-underline-position: under; }
 
 /*-----INDEX-----*/
-/*-HERO-IMAGE-*/
+/*-hero-image-*/
 .hero {
   display: flex;
   flex-direction: column;
@@ -91,22 +92,22 @@ header {
     font-weight: 200;
     letter-spacing: 0.5px; }
   .hero a {
-    font-weight: 400;
     font-size: 1rem;
+    font-weight: 300;
     text-decoration: none;
-    letter-spacing: 1px;
     color: white;
     background-color: #9f63ff;
     border-radius: 10px;
     padding: 15px;
-    transition: 300ms ease-in; }
+    transition: 300ms ease-in;
+    letter-spacing: 1.5px;
+    cursor: pointer; }
     .hero a:hover {
       color: white;
       background-color: #7b48db;
-      cursor: pointer;
       transform: scale(1.1); }
 
-/*-SERVICIOS-*/
+/*-servicios-*/
 .servicios {
   text-align: center;
   margin-top: 100px;
@@ -114,15 +115,15 @@ header {
   .servicios h3 {
     font-size: 1.5rem;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 5px;
-    padding: 20px 10px 10px 10px; }
+    padding: 20px 10px 10px 10px;
+    text-transform: uppercase; }
   .servicios h2 {
     font-size: 2rem;
     font-weight: 200;
     letter-spacing: 0.5px;
     padding: 0px 10px 10px 10px;
-    margin-bottom: 30px; }
+    letter-spacing: 0.5px; }
   .servicios .servicios-tipos {
     display: flex;
     justify-content: space-evenly;
@@ -138,15 +139,14 @@ header {
         margin-bottom: 20px;
         border-radius: 10px; }
       .servicios .servicios-tipos div h4 {
-        margin-bottom: 10px;
         font-size: 1.4rem;
         font-weight: 400;
-        text-transform: uppercase;
         letter-spacing: 2px;
-        margin-left: 20px; }
+        padding: 0px;
+        text-transform: uppercase; }
       .servicios .servicios-tipos div p {
-        padding-left: 20px;
-        padding-bottom: 40px;
+        padding-left: 0px;
+        padding-bottom: 20px;
         font-size: 1.2rem;
         font-weight: 200; }
       .servicios .servicios-tipos div a {
@@ -158,13 +158,13 @@ header {
         border-radius: 10px;
         padding: 15px;
         transition: 300ms ease-in;
-        margin-left: 20px;
+        margin-left: 0px;
         cursor: pointer; }
         .servicios .servicios-tipos div a:hover {
           color: white;
           background-color: #9f63ff; }
 
-/*-PRODUCTOS-*/
+/*-productos-*/
 .productos {
   margin-top: 70px;
   color: #131815; }
@@ -234,7 +234,7 @@ header {
           color: white;
           background-color: #9f63ff; }
 
-/*-HACER-PEDIDOS-*/
+/*-hacer-pedidos-*/
 .pedidos {
   text-align: center;
   margin-top: 100px;
@@ -274,7 +274,7 @@ header {
         font-weight: 200;
         font-size: 1.2rem; }
 
-/*-SUSCRIBIR-*/
+/*-suscribir-*/
 .suscribir {
   text-align: center;
   margin-top: 100px;
@@ -330,7 +330,7 @@ header {
         .suscribir .suscribir-bloque .suscribir-formu form div input {
           font-size: 1rem;
           font-weight: 300;
-          border: 1px solid #9f63ff;
+          border: 1px solid #e7e8e8;
           border-radius: 5px;
           padding: 10px;
           width: 360px;
@@ -352,7 +352,7 @@ header {
             background-color: #9f63ff; }
 
 /*-----ACERCA DE-----*/
-/*-ABOUT-*/
+/*-about-*/
 .about {
   margin: 5% 7% 5% 46%;
   padding: 20px 0px;
@@ -360,7 +360,7 @@ header {
   .about p {
     line-height: 2rem; }
 
-/*-CONÓCENOS-GENERALES-*/
+/*-conócenos-generales-*/
 .generales {
   width: 100%;
   height: 80vh;
@@ -413,8 +413,8 @@ header {
       object-fit: cover; }
 
 /*-----SERVICIOS-----*/
-/*-INTRO-SERVICES-*/
-/*-SERVICE-VARIOUS-*/
+/*-intro-service-*/
+/*-service-various-*/
 .service-various {
   text-align: center;
   margin-top: 100px;
@@ -459,8 +459,8 @@ header {
       padding-left: 10px; }
 
 /*-----SERVICIOS-----*/
-/*-INTRO-PRODUCTS-*/
-/*-GALERIA-*/
+/*-intro-products-*/
+/*-galeria-*/
 .gallery {
   margin-top: 100px; }
   .gallery h3 {
@@ -535,7 +535,8 @@ header {
           background-color: #9f63ff; }
 
 /*-----CONTACTO-----*/
-/*-INTRO-CONTACT-*/
+/*-intro-contact-*/
+/*-formulario-bt-*/
 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -554,13 +555,13 @@ header {
     .contact-form form .mb-3 input {
       font-size: 1rem;
       font-weight: 300;
-      border: 1px solid #9f63ff;
+      border: 1px solid #e7e8e8;
       border-radius: 5px;
       padding: 10px; }
     .contact-form form .mb-3 .form-control {
       font-size: 1rem;
       font-weight: 300;
-      border: 1px solid #9f63ff;
+      border: 1px solid #e7e8e8;
       border-radius: 5px;
       padding: 10px; }
   .contact-form form .form-check .form-check-input {
@@ -610,10 +611,12 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: left;
-      align-items: flex-start; }
+      align-items: flex-start;
+      padding-left: 0; }
       footer .box .redes .list ul li a i {
         font-size: 2.5rem;
-        color: white; }
+        color: white;
+        padding-right: 10px; }
     footer .box div h3 {
       font-size: 1.2rem;
       font-weight: 400;
@@ -621,7 +624,8 @@ footer {
       padding: 20px 0px 10px 0px;
       text-transform: uppercase; }
     footer .box div ul {
-      list-style: none; }
+      list-style: none;
+      padding-left: 0; }
       footer .box div ul li {
         font-size: 1rem;
         margin: 10px 0px 0px 0px;
@@ -648,6 +652,10 @@ footer {
     padding-bottom: 10px; }
   header nav {
     justify-content: center; }
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: white; }
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    text-decoration: none; }
   /*index*/
   .servicios .servicios-tipos div {
     width: 350px;
@@ -657,6 +665,18 @@ footer {
   .servicios .servicios-tipos div img {
     width: 300px;
     height: 200px; }
+  .servicios .servicios-tipos div a {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    background-color: #7b48db;
+    border: 0px;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer; }
+  .servicios .servicios-tipos div a:hover {
+    background-color: #7b48db; }
   .productos {
     margin-top: 60px; }
   .productos .productos-contenedor {
@@ -670,6 +690,17 @@ footer {
   .productos .productos-contenedor .productos-varios div img {
     width: 300px;
     height: 200px; }
+  .productos .productos-contenedor .productos-varios a {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border: 0px;
+    background-color: #7b48db;
+    padding: 15px;
+    cursor: pointer; }
+  .productos .productos-contenedor .productos-varios a:hover {
+    background-color: #7b48db; }
   .pedidos {
     margin-top: 70px; }
   .suscribir h2 {
@@ -688,6 +719,18 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 0px 0px 10px 10px; }
+  .suscribir .suscribir-bloque .suscribir-formu form div button {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    background-color: #7b48db;
+    border: 0px;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer; }
+  .suscribir .suscribir-bloque .suscribir-formu form div button:hover {
+    background-color: #7b48db; }
   /*about*/
   .intro {
     flex-direction: column; }
@@ -737,31 +780,6 @@ footer {
     width: 100%;
     height: 70vh;
     border-radius: 0; }
-  .service-various .type {
-    margin: 40px 50px 5px 50px;
-    padding-top: 0px; }
-  .service-various .type h3 {
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-    padding: 20px 0px 10px 0px;
-    text-align: center; }
-  .service-various .line {
-    width: 250px;
-    height: 0px;
-    margin: 0px 100px; }
-  .service-various .stock {
-    flex-direction: column;
-    width: 700px;
-    height: 100%;
-    align-items: flex-start;
-    padding: 30px 0px;
-    margin: 40px auto 80px auto; }
-  .service-various .stock .stock-a {
-    margin: 0px 50px 20px 50px; }
-  .service-various .stock .stock-a h3 {
-    padding: 40px 0px 10px 0px; }
-  .service-various .stock .stock-a p {
-    margin: 0; }
   /*products*/
   .intro-products {
     flex-direction: column; }
@@ -791,6 +809,17 @@ footer {
   .gallery .gallery-content .gallery-products div img {
     width: 300px;
     height: 200px; }
+  .gallery .gallery-content .gallery-products a {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border: 0px;
+    background-color: #7b48db;
+    padding: 15px;
+    cursor: pointer; }
+  .gallery .gallery-content .gallery-products a:hover {
+    background-color: #7b48db; }
   /*contact*/
   .intro-contact {
     flex-direction: column; }
@@ -815,7 +844,9 @@ footer {
   footer .box img {
     width: 150px;
     height: 150px;
-    margin: 10px 50px 10px 10px; } }
+    margin: 10px 50px 10px 10px; }
+  footer .box .redes .list ul li a i:hover {
+    color: #f0dfff; } }
 
 /*MAX-WIDTH-576PX*/
 @media only screen and (max-width: 576px) {
@@ -1142,7 +1173,7 @@ footer {
     align-items: flex-start;
     text-align: left;
     background-color: rgba(240, 223, 255, 0.4);
-    padding: 30px 30px;
+    padding: 30px 20px;
     border-radius: 0px 0px 10px 10px;
     width: 400px;
     height: 100%; }

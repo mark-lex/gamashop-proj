@@ -12,6 +12,14 @@
     justify-content: center;
   }
 
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: nth($text-colour , 3 );
+  }
+
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    text-decoration: none;
+  }
+
   /*index*/
   .servicios .servicios-tipos div {
     width: 350px;
@@ -23,6 +31,22 @@
   .servicios .servicios-tipos div img {
     width: 300px;
     height: 200px;
+  }
+
+  .servicios .servicios-tipos div a {
+    font-size: map-get($btn-mq , fnt-size );
+    font-weight: map-get($btn-mq , fnt-weight );
+    text-decoration: map-get($btn-mq , deco );
+    color: map-get($btn-mq , fnt-colour );
+    background-color: map-get($btn-mq , bg-colour );
+    border: map-get($btn-mq , bord );
+    border-radius: map-get($btn-mq , b-radius );
+    padding: map-get($btn-mq , padd );
+    cursor: map-get($btn-mq , cur );
+  }
+
+  .servicios .servicios-tipos div a:hover {
+    background-color: nth($colour-palette , 4 );
   }
 
   .productos {
@@ -44,6 +68,21 @@
   .productos .productos-contenedor .productos-varios div img {
     width: 300px;
     height: 200px;
+  }
+
+  .productos .productos-contenedor .productos-varios a {
+    font-size: map-get($btn-mq , fnt-size );
+    font-weight: map-get($btn-mq , fnt-weight );
+    text-decoration: map-get($btn-mq , deco );
+    color: map-get($btn-mq , fnt-colour );
+    border: map-get($btn-mq , bord );
+    background-color: map-get($btn-mq , bg-colour );
+    padding: map-get($btn-mq , padd );
+    cursor: map-get($btn-mq , cur );
+  }
+
+  .productos .productos-contenedor .productos-varios a:hover {
+    background-color: nth($colour-palette , 4 );
   }
 
   .pedidos {
@@ -74,6 +113,22 @@
     width: 100%;
     height: 100%;
     border-radius: 0px 0px 10px 10px;
+  }
+
+  .suscribir .suscribir-bloque .suscribir-formu form div button {
+    font-size: map-get($btn-mq , fnt-size );
+    font-weight: map-get($btn-mq , fnt-weight );
+    text-decoration: map-get($btn-mq , deco );
+    color: map-get($btn-mq , fnt-colour );
+    background-color: map-get($btn-mq , bg-colour );
+    border: map-get($btn-mq , bord );
+    border-radius: map-get($btn-mq , b-radius );
+    padding: map-get($btn-mq , padd );
+    cursor: map-get($btn-mq , cur );
+  }
+
+  .suscribir .suscribir-bloque .suscribir-formu form div button:hover {
+    background-color: nth($colour-palette , 4 );
   }
 
   /*about*/
@@ -151,45 +206,6 @@
     border-radius: 0;
   }
 
-  .service-various .type {
-    margin: 40px 50px 5px 50px;
-    padding-top: 0px;
-  }
-
-  .service-various .type h3 {
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-    padding: 20px 0px 10px 0px;
-    text-align: center;
-  }
-
-  .service-various .line {
-    width: 250px;
-    height: 0px;
-    margin: 0px 100px;
-  }
-
-  .service-various .stock {
-    flex-direction: column;
-    width: 700px;
-    height: 100%;
-    align-items: flex-start;
-    padding: 30px 0px;
-    margin: 40px auto 80px auto;
-  }
-
-  .service-various .stock .stock-a {
-    margin: 0px 50px 20px 50px;
-  }
-
-  .service-various .stock .stock-a h3 {
-    padding: 40px 0px 10px 0px;
-  }
-
-  .service-various .stock .stock-a p {
-    margin: 0;
-  }
-
   /*products*/
   .intro-products {
     flex-direction: column;
@@ -235,6 +251,21 @@
     height: 200px;
   }
 
+  .gallery .gallery-content .gallery-products a {
+    font-size: map-get($btn-mq , fnt-size );
+    font-weight: map-get($btn-mq , fnt-weight );
+    text-decoration: map-get($btn-mq , deco );
+    color: map-get($btn-mq , fnt-colour );
+    border: map-get($btn-mq , bord );
+    background-color: map-get($btn-mq , bg-colour );
+    padding: map-get($btn-mq , padd );
+    cursor: map-get($btn-mq , cur );
+  }
+  
+  .gallery .gallery-content .gallery-products a:hover {
+    background-color: nth($colour-palette , 4 );
+  }
+
   /*contact*/
   .intro-contact {
     flex-direction: column;
@@ -274,6 +305,10 @@
     width: 150px;
     height: 150px;
     margin: 10px 50px 10px 10px;
+  }
+
+  footer .box .redes .list ul li a i:hover {
+    color: nth($colour-palette , 9 );
   }
 }
 
@@ -798,8 +833,8 @@
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    background-color: rgba(240, 223, 255, 0.4);
-    padding: 30px 30px;
+    background-color: $bg-colour;
+    padding: 30px 20px;
     border-radius: 0px 0px 10px 10px;
     width: 400px;
     height: 100%;

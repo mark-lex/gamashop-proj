@@ -1,6 +1,6 @@
 /*-----INDEX-----*/
 
-/*-HERO-IMAGE-*/
+/*-hero-image-*/
 .hero {
     display: flex;
     flex-direction: column;
@@ -33,42 +33,36 @@
         letter-spacing: 0.5px;
     }
     a{
-        font-weight: 400;
         font-size: nth($font-size , 9 );
+        font-weight: 300;
         text-decoration: none;
-        letter-spacing: 1px;
         color: nth($text-colour , 3 );
         background-color: nth($colour-palette, 5 );
         border-radius: 10px;
         padding: 15px;
         transition: 300ms ease-in;
+        letter-spacing: 1.5px;
+        cursor: pointer;
         &:hover {
             color: nth($text-colour , 3 );
             background-color: nth($colour-palette, 4 );
-            cursor: pointer;
             transform: scale(1.1);
         }
     }
 }
 
-/*-SERVICIOS-*/
+/*-servicios-*/
 .servicios {
     text-align: center;
     margin-top: 100px;
     color: nth($text-colour , 1 );
     h3 {
-        font-size: nth($font-size , 6 );
-        font-weight: 400;
+        @include text (nth($font-size , 6 ), 400, 5px, 20px 10px 10px 10px);
         text-transform: uppercase;
-        letter-spacing: 5px;
-        padding: 20px 10px 10px 10px;
     }
     h2 {
-        font-size: nth($font-size , 5 );
-        font-weight: 200;
+        @include text (nth($font-size , 5 ), 200, 0.5px, 0px 10px 10px 10px);
         letter-spacing: 0.5px;
-        padding: 0px 10px 10px 10px;
-        margin-bottom: 30px;
     }
     .servicios-tipos {
         display: flex;
@@ -86,16 +80,12 @@
                 border-radius: 10px;
             }
             h4 {
-                margin-bottom: 10px;
-                font-size: nth($font-size , 7 );
-                font-weight: 400;
+                @include text (nth($font-size , 7 ), 400, 2px, 0px );
                 text-transform: uppercase;
-                letter-spacing: 2px;
-                margin-left: 20px;
             }
             p {
-                padding-left: 20px;
-                padding-bottom: 40px;
+                padding-left: 0px;
+                padding-bottom: 20px;
                 font-size: nth($font-size , 8 );
                 font-weight: 200;
             }
@@ -119,8 +109,7 @@
     } 
 }
 
-/*-PRODUCTOS-*/
-
+/*-productos-*/
 .productos {
     margin-top: 70px;
     color: nth($text-colour , 1 );
@@ -205,7 +194,7 @@
     }
 }
 
-/*-HACER-PEDIDOS-*/
+/*-hacer-pedidos-*/
 .pedidos {
     text-align: center;
     margin-top: 100px;
@@ -253,7 +242,7 @@
     }
 }
 
-/*-SUSCRIBIR-*/
+/*-suscribir-*/
 .suscribir {
     text-align: center;
     margin-top: 100px;

@@ -3,6 +3,7 @@
 $bg-colour: rgba(240, 223, 255, 0.4);
 
 //!LISTAS
+//PALETTE
 $colour-palette: 
 #2a137a, 
 #3e1f93, 
@@ -14,11 +15,13 @@ $colour-palette:
 #dfc0ff, 
 #f0dfff;
 
+//TEXT
 $text-colour: 
 #131815, 
 #e7e8e8, 
 white;
 
+//SIZE
 $font-size: 
 4rem, 
 3.5rem, 
@@ -32,24 +35,39 @@ $font-size:
 0.9rem, 
 0.8rem;
 
-//!MAPAS
+//!MAPS
+//BUTTON FOR DESKTOP
 $button: (
-    fnt-size: 1rem,
+    fnt-size: nth($font-size , 9 ),
     fnt-weight: 300,
     deco: none,
-    fnt-colour: #9f63ff,
-    bord: 1px solid #9f63ff,
+    fnt-colour: nth($colour-palette , 5 ),
+    bord: 1px solid nth($colour-palette , 5 ),
     b-radius: 10px,
     padd: 15px,
     trans: 300ms ease-in,
-    m-left: 20px,
+    m-left: 0px,
     cur: pointer,
 );
 
-$input: (
-    fnt-size: 1rem,
+//BUTTON FOR MEDIA-QUERY
+$btn-mq: (
+    fnt-size: nth($font-size , 9 ),
     fnt-weight: 300,
-    bord: 1px solid #9f63ff,
+    deco: none,
+    fnt-colour: nth($text-colour , 3 ),
+    bg-colour: nth($colour-palette , 4 ),
+    bord: 0px,
+    b-radius: 10px,
+    padd: 15px,
+    cur: pointer,
+);
+
+//INPUTS
+$input: (
+    fnt-size: nth($font-size , 9 ),
+    fnt-weight: 300,
+    bord: 1px solid nth($text-colour , 2 ),
     b-radius: 5px,
     padd: 10px,
     w:360px,
@@ -90,6 +108,7 @@ $input: (
     border-radius: 0px 0px 10px 10px;
     width: 750px;
     height: 500px;
+    object-fit: cover;
 }
 
 //!MIXINS

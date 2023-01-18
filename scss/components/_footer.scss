@@ -24,11 +24,13 @@ footer {
                     flex-direction: row;
                     justify-content: left;
                     align-items: flex-start;
+                    padding-left: 0;
                     li {
                         a {
                             i {
                                 font-size: nth($font-size , 4 );
                                 color: nth($text-colour , 3 );
+                                padding-right: 10px;
                             }
                         }
                     }
@@ -42,6 +44,7 @@ footer {
             }
             ul {
                 list-style: none;
+                padding-left: 0;
                 li {
                     font-size: nth($font-size , 9 );
                     margin: 10px 0px 0px 0px;

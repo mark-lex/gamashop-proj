@@ -1,6 +1,6 @@
 /*-----CONTACTO-----*/
 
-/*-INTRO-CONTACT-*/
+/*-intro-contact-*/
 .intro-contact {
     @extend %intro;
     div {
@@ -17,8 +17,8 @@
     }
 }
 
+/*-formulario-bt-*/
 .contact-form {
-
     form {
         display: flex;
         flex-direction: column;
