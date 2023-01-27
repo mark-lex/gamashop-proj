@@ -39,15 +39,16 @@
         padding-bottom: 50px;
         .gallery-products {
             width: 400px;
-            height: 520px;
+            height: 650px;
             margin: 20px 20px;
             color: nth($text-colour , 1 );
             div {
                 img {
                     width: 400px;
-                    height: 300px;
+                    height: 100%;
+                    object-fit: contain;
                     margin-bottom: 10px;
-                    border-radius: 10px;
+                    border-radius: 16px;
                 }
                 h4 {
                     @include text (nth($font-size , 7 ), 400, 2px, 10px 0px 0px 0px);
