@@ -18,71 +18,106 @@ alert("Registro exitoso.\nTe damos la bienvenida a nuestra tienda " + username);
 
 console.log("Guarda esta información en un lugar seguro para tus futuras compras.\nNombre de usuario: " + username + "\n" + "Contraseña: " + password) + "\n";
 
-//! REALIZANDO COMPRA DE LOS PRODUCTOS ----------------*
+//! REALIZANDO COMPRA DE LOS PRODUCTOS  ----------------*
 //LISTA DE PRODUCTOS
-function listProducts() {
-    let products = {
-        joggers: 35,
-        polos: 25,
-        vinchas: 5,
-        peinetas: 7,
-        medias: 10,
-        toallas: 18,
-        camisas: 25,
-    };
-    return products;
-}
+    let products = [
+        { name: "joggers", price: 35 },
+        { name: "polos", price: 25 },
+        { name: "vinchas", price: 5 },
+        { name: "peinetas", price: 7 },
+        { name: "medias", price: 10 },
+        { name: "toallas", price: 18 },
+    ];
 
-//MOSTRAR LISTA
-function showProducts() {
-    let products = listProducts();
-    let message = "Estos son nuestros productos en stock:\n\n";
-    for (let product in products) {
-        message += `${product}: S/ ${products[product]}\n`;
-    }
-    alert(message);
-}
-
-//COMPRAR PRODUCTOS
-function buyProducts() {
-    let products = listProducts();
-    let total = 0;
-    let keepBuy = true;
-    
-    while(keepBuy) {
-        let product = prompt("Ingresa el producto que quieras comprar: ");
-        if (product in products) {
-            let quantity = Number(prompt(`Ingresa la cantidad de ${product} que quieras comprar:`));
-            total += products[product] * quantity;
-            keepBuy = confirm("¿Quieres seguir comprando?");
-        } else {
-            alert("Ese producto no está en la lista.");
+  //MOSTRAR LISTA
+    function showProducts() {
+        console.log("--- LISTA DE PRODUCTOS ---");
+        for (let i = 0; i < products.length; i++) {
+        console.log(`${i + 1}. ${products[i].name} - S/ ${products[i].price}`);
         }
     }
-    alert(`Total a pagar: S/ ${total}`);
-    console.log(`Total a pagar: S/ ${total}`);
+
+  //COMPRAR PRODUCTOS
+    function buyProducts() {
+        let cart = [];
+        let option;
+    
+        while (option !== "0") {
+        showProducts();
+        console.log("0. Terminar compra");
+        option = prompt("Selecciona un producto (un número) para comprar (0 para terminar)");
+    
+        if (option !== "0") {
+            let productIndex = Number(option) - 1;
+    
+            if (productIndex >= 0 && productIndex < products.length) {
+            let quantity = Number(prompt(`¿Cuántos ${products[productIndex].name} quieres comprar?`));
+            let product = {
+                ...products[productIndex],
+                quantity: quantity
+            };
+            cart.push(product);
+            alert(`Producto añadido al carrito: ${product.name}`);
+            console.log(`Producto añadido al carrito: ${product.name}`);
+    
+            alert(`La cantidad que compraste: ${product.quantity}`);
+            console.log(`La cantidad que compraste: ${product.quantity}`);
+            } else {
+            alert("Esa opción no es válida. Inténtalo nuevamente.")
+            }
+        }
+        }
+
+        alert("NOTA: Los productos como las medias u otros similares, el precio unitario equivale a un par")
+        console.log("NOTA: Los productos como las medias u otros similares, el precio unitario equivale a un par")
+
+        console.log("--- RESUMEN DE COMPRA ---");
+        let total = 0;
+
+        for (let i = 0; i < cart.length; i++) {
+        let product = cart[i];
+        alert(`${product.quantity} ${product.name} - S/ ${product.price} (precio unitario)`);
+        console.log(`${product.quantity} ${product.name} - S/ ${product.price} (precio unitario)`);
+        total += product.price * product.quantity;
+        }
+
+        let igv = total * 0.18;
+        let subtotal = total - igv;
+
+        alert(`Subtotal: S/ ${subtotal.toFixed(2)}`);
+        console.log(`Subtotal: S/ ${subtotal.toFixed(2)}`);
+        alert(`IGV (18%): S/ ${igv.toFixed(2)}`);
+        console.log(`IGV (18%): S/ ${igv.toFixed(2)}`);
+        alert(`Total a pagar : S/ ${total.toFixed(2)}`);
+        console.log(`-------------------\nTotal a pagar : S/ ${total.toFixed(2)}`);
+    }
+
+  //EJECUTAR COMPRA DE PRODUCTOS
+    buyProducts();
+
+//! ESCOGE COLOR Y TALLA DEL PRODUCTO -----------------*
+
+let colour = prompt("Elige un color (negro, azul, guinda y blanco)");
+
+let size = prompt("Ahora, elige una talla (S, M, L, XL)");
+
+switch (colour) {
+    case "negro":
+        alert(`Has elegido el color negro en talla ${size}`);
+        console.log(`Has elegido el color negro en talla ${size}`);
+        break;
+    case "azul":
+        alert(`Has elegido el color azul en talla ${size}`);
+        console.log(`Has elegido el color azul en talla ${size}`);
+        break;
+    case "guinda":
+        alert(`Has elegido el color guinda en talla ${size}`);
+        console.log(`Has elegido el color guinda en talla ${size}`);
+        break;
+    case "blanco":
+        alert(`Has elegido el color blanco en talla ${size}`);
+        console.log(`Has elegido el color blanco en talla ${size}`);
+        break;
+    default:
+        alert("Color no válido");
 }
-
-//EJECUTAR LISTA DE PRODUCTOS
-showProducts();
-//EJECUTAR COMPRA DE PRODUCTOS
-buyProducts();
-
-//! CALCULANDO IGV - SUBTOTAL DE PRODUCTO -------------*
-function calcularIGV(price, igvPorcentaje) {
-    const IGV = price * igvPorcentaje;
-    return IGV;
-}
-
-const productPrice = Number(prompt("Ingrese el precio del producto a calcular el IGV: "));
-const igvPorcentaje = 0.18; //En Perú, el IGV es del 18%
-
-const igvCalculado = calcularIGV(productPrice, igvPorcentaje);
-const subtotal = productPrice - igvCalculado;
-
-alert(`El IGV calculado es: ${igvCalculado.toFixed(2)}`);
-alert(`El subtotal es: ${subtotal.toFixed(2)}`);
-console.log(`El IGV calculado es: ${igvCalculado.toFixed(2)}`);
-console.log(`El subtotal es: ${subtotal.toFixed(2)}`);
-
-alert ("Agredecemos tu preferencia. \nEsperamos verte de nuevo pronto.")
