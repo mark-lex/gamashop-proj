@@ -18,15 +18,88 @@ alert("Registro exitoso.\nTe damos la bienvenida a nuestra tienda " + username);
 
 console.log("Guarda esta información en un lugar seguro para tus futuras compras.\nNombre de usuario: " + username + "\n" + "Contraseña: " + password) + "\n";
 
-//! REALIZANDO COMPRA DE LOS PRODUCTOS  ----------------*
+//! FILTRAR BÚSQUEDA Y EXISTENCIA DE PRODUCTO (FILTER/SOME) -------*
+
+const searchProducts = [
+    {
+        name: "joggers",
+        price: 25
+    },
+    {
+        name: "joggers drill",
+        price: 35
+    },
+    {
+        name: "joggers french-terry",
+        price: 20
+    },
+    {
+        name: "polos camisero",
+        price: 25
+    },
+    {
+        name: "polos",
+        price: 22
+    },
+    {
+        name: "shorts",
+        price: 13
+    },
+    {
+        name: "vinchas",
+        price: 5
+    },
+    {
+        name: "peinetas",
+        price: 7
+    },
+    {
+        name: "medias",
+        price: 10
+    },
+    {
+        name: "toallas medianas",
+        price: 18
+    },
+    {
+        name: "toallas grandes",
+        price: 23
+    },
+];
+
+let chosenProd = prompt("Ingrese el producto a buscar: ");
+console.log (searchProducts.filter((elem) => elem.name.includes(chosenProd)));
+
+let stockProd = prompt("Ingrese el producto a consultar: ");
+console.log (searchProducts.some((elem) => elem.name == stockProd));
+
+//! REALIZANDO COMPRA DE LOS PRODUCTOS  --------------------*
 //LISTA DE PRODUCTOS
     let products = [
-        { name: "joggers", price: 35 },
-        { name: "polos", price: 25 },
-        { name: "vinchas", price: 5 },
-        { name: "peinetas", price: 7 },
-        { name: "medias", price: 10 },
-        { name: "toallas", price: 18 },
+        {
+            name: "joggers",
+            price: 35
+        },
+        { 
+            name: "polos",
+            price: 25
+        },
+        { 
+            name: "vinchas",
+            price: 5
+        },
+        { 
+            name: "peinetas",
+            price: 7
+        },
+        { 
+            name: "medias packx3",
+            price: 10
+        },
+        { 
+            name: "toallas",
+            price: 18
+        },
     ];
 
   //MOSTRAR LISTA
@@ -68,8 +141,8 @@ console.log("Guarda esta información en un lugar seguro para tus futuras compra
         }
         }
 
-        alert("NOTA: Los productos como las medias u otros similares, el precio unitario equivale a un par")
-        console.log("NOTA: Los productos como las medias u otros similares, el precio unitario equivale a un par")
+        alert("NOTA: Los productos como las medias u otros similares, el precio unitario equivale a un pack x 3")
+        console.log("NOTA: Los productos como las medias u otros similares, el precio unitario equivale a un pack x 3")
 
         console.log("--- RESUMEN DE COMPRA ---");
         let total = 0;
